@@ -3,7 +3,7 @@
 
 import axios from "axios";
 
-const API_URL = "http://127.0.0.1:5000";
+const API_URL = process.env.REACT_APP_BACKEND_URL;
 
 export const startGame = async (mode) => {
   return axios.post(`${API_URL}/start`, { mode });
