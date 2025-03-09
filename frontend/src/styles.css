@@ -1,0 +1,220 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #282c34;
+    color: white;
+  }
+  
+  .app {
+    margin-top: 20px;
+  }
+  
+  .board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    font-size: 2rem;
+    border: 1px solid white;
+    background-color: #444;
+    color: white;
+  }
+  
+  .cell:hover {
+    background-color: #666;
+  }
+  
+  .scoreboard {
+    margin: 20px;
+    font-size: 1.5rem;
+  }
+  
+  .mode-selection button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    font-size: 2rem;
+    border: 1px solid white;
+    background-color: #444;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .cell:hover {
+    background-color: #666;
+  }
+  
+  .cell:not(:empty) {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  .winning-cell {
+    background-color: gold !important;
+    animation: blink 0.5s infinite alternate;
+  }
+  
+  @keyframes blink {
+    from {
+      background-color: gold;
+    }
+    to {
+      background-color: orange;
+    }
+  }
+  
+  .loading-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #282c34;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .loading-screen h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .loading-screen h2 {
+    font-size: 1.5rem;
+    margin-top: 5px;
+  }
+  
+  .mode-selection-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+  }
+  
+  .mode-selection-screen h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .mode-selection-screen button {
+    font-size: 1.5rem;
+    margin: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  
+  .mode-selection-screen button:hover {
+    background-color: #45a049;
+  }
+  
+  .next-round-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  
+  .next-round-btn:hover {
+    background-color: #e67e22;
+  }
+  
+  .winner-message {
+    font-size: 2rem;
+    color: gold;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+
+  .winner-screen {
+    text-align: center;
+  }
+  
+  .winner-message {
+    font-size: 2rem;
+    color: gold;
+    margin-bottom: 15px;
+  }
+  
+  .rematch-btn, .exit-btn {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .rematch-btn {
+    background-color: #2ecc71;
+    color: white;
+  }
+  
+  .rematch-btn:hover {
+    background-color: #27ae60;
+  }
+  
+  .exit-btn {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  .exit-btn:hover {
+    background-color: #c0392b;
+  }
+  
+  .exit-screen {
+    display: flex;
+    justify-content: center;  /* Centers horizontally */
+    align-items: center;      /* Centers vertically */
+    height: 100vh;            /* Makes sure it takes the full height of the viewport */
+    font-size: 2rem;
+    color: white; /* Text color */
+}
+
+  

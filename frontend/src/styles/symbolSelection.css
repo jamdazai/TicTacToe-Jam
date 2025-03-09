@@ -1,0 +1,35 @@
+.symbol-selection-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+}
+
+.symbol-selection-screen h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.symbol-selection-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.symbol-selection-buttons button {
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.symbol-selection-buttons button:hover {
+    background-color: #45a049;
+}

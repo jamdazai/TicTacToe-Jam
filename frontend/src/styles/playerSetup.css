@@ -1,0 +1,56 @@
+.player-setup-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: 100vh; /* Make it take full screen height */
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+}
+
+.player-name-form {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    gap: 20px; /* Add spacing between inputs */
+    width: 100%;
+    max-width: 400px; /* Set a max-width to control size */
+}
+
+.player-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem; /* Increase label size */
+}
+
+.player-input label {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.player-input input {
+    width: 100%; /* Use full width of form */
+    padding: 15px; /* Increase padding for better UX */
+    font-size: 1.3rem; /* Make text inside bigger */
+    border-radius: 8px;
+    border: none;
+    text-align: center;
+}
+
+.start-game-btn {
+    margin-top: 20px;
+    padding: 15px 25px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: background 0.3s;
+    width: 10%;
+}
+
+.start-game-btn:hover {
+    background-color: #45a049;
+}

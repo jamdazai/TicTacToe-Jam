@@ -1,0 +1,27 @@
+.scoreboard {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: left;
+}
+
+.player-score {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.player-score span {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+h2{
+  font-size: 3.5rem;
+}
+
+.score-bars {
+  font-size: 2rem;
+  color: gold;
+  letter-spacing: 5px;
+}

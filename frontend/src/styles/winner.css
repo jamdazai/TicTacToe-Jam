@@ -1,0 +1,37 @@
+.winner-screen {
+    text-align: center;
+}
+
+.winner-message {
+    font-size: 2rem;
+    color: gold;
+    margin-bottom: 15px;
+}
+
+.rematch-btn, .exit-btn {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.rematch-btn {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.rematch-btn:hover {
+    background-color: #27ae60;
+}
+
+.exit-btn {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.exit-btn:hover {
+    background-color: #c0392b;
+}
