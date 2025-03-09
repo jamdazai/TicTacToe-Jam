@@ -67,12 +67,23 @@ const App = () => {
   };
 
   const handleNextRound = async () => {
-    if (winner) return;
-    const response = await resetGame();
-    setBoard(response.data.board);
-    setGameOver(false);
-    document.querySelectorAll(".cell").forEach((cell) => cell.classList.remove("winning-cell"));
+    if (winner) {
+      return; 
+    }
+  
+    try {
+      const response = await resetGame();
+      if (!response || !response.data || !response.data.board) {
+        return;
+      }
+      setBoard([...response.data.board]);
+      setGameOver(false);
+      setWinner(null); 
+      setCurrentPlayer("X");
+    } catch (error) {
+    }
   };
+  
 
   const checkWinner = (board) => {
     const winningCombinations = [
